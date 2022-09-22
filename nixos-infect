@@ -343,7 +343,7 @@ if [[ -z "$NO_SWAP" ]]; then
 fi
 makeConf
 infect
-if [ -n "$ROOT_PASSWORD" ]; then
+if [[ -n "$ROOT_HASH" ]]; then
     echo "-----"
     echo "Root password set: $ROOT_PASSWORD"
     echo "You can use it if instance is not reachable through SSH. Don't forget to change it after infection complete."
